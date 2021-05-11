@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            background-image:linear-gradient(to right,hsl(150,50%,50%),hsl(200,50%,50%)) ;
+           
+        }
+.move{
+animation-name: mymove;
+animation-duration: 3s;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in;
+
+
+
+}
+.image{
+    animation-name: movetwo;
+    animation-duration: 3s;
+    animation-direction: alternate;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in;
+
+    
+}
+
+@keyframes mymove{
+    from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translate(20px);
+    }
+}
+
+    @keyframes movetwo{
+    from{
+        transform: translate(-200px);
+    }
+    to{
+        transform: translate(-150px);
+    }
+}  
+
+
+    </style>
+</head>
+<body>
+    <div>
+    <img class="move"  width="600rem" height="550rem"src="rocks-576655_640.png" alt="sorry">
+ 
+   <img class="image" width="200rem" height="300rem" src="flowers-34592_640.png" alt="sorry">
+   </div>
+   </body>
+  
+</html>
